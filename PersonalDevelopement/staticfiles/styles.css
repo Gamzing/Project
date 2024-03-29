@@ -1,0 +1,10 @@
+body{
+    background-color: aqua;
+    text-align: center;
+}
+li{
+    display: inline;
+    /* float: right; */
+    padding: 5px;
+    margin: 5px;
+}

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Developement Web Application</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body id="color">
+    <script src="{% static 'logic.js' %}"></script>
+    <div>
+        <Button id="Dark" onclick="darkMode()">Dark Mode</Button></h1>
+    </div>
+
+    <div>
+        <h1 class="text">Welcome 
+        <p class="text"> My Personal Web Application</p>
+    </div>
+
+    <p> <select name="choose" id="dropdown">
+            <option value="0">choose</option>
+            <option value="1">Health</option>
+            <option value="2">Study</option>
+            <option value="3">Nature</option>
+            <option value="4">Space</option>
+        </select>
+    </p>
+
+    <form action="data.php" method="get" class="cntr">
+        <input type="radio" name="radio">Male
+        <input type="radio" name="radio">Female <br>
+        <input type="text" name="data"><br/>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
